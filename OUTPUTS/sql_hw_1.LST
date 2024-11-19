@@ -1,0 +1,1127 @@
+SQL> start C:\DBM\Comp_Loan.txt
+DROP TABLE LOAN
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE STUDENT
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE PROGRAM
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE COMPUTER
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE LOCATION
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE ITEM
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+SQL> select * from ITEM;
+
+ITEM MANUF                          MODEL                                       
+---- ------------------------------ ------------------------------              
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+15   Dell                           XPS 13                                      
+Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPD
+DR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                     
+                                                                                
+17   Apple                          MacBook Pro                                 
+14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD  
+                                                                                
+19   HP                             Pavilion                                    
+Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM
+
+ITEM MANUF                          MODEL                                       
+---- ------------------------------ ------------------------------              
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver             
+                                                                                
+21   HP                             Envy                                        
+X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB D
+DR4 RAM, 1TB SSD                                                                
+                                                                                
+23   Apple                          MacBook Air                                 
+Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage
+, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad        
+
+ITEM MANUF                          MODEL                                       
+---- ------------------------------ ------------------------------              
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+                                                                                
+25   Dell                           Inspiron                                    
+Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 
+(Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader         
+                                                                                
+
+6 rows selected.
+
+SQL> set linesize 130
+SQL> set pagesize 40
+SQL> select * from ITEM;
+
+ITEM MANUF                          MODEL                                                                                         
+---- ------------------------------ ------------------------------                                                                
+COMMENTS                                                                                                                          
+----------------------------------------------------------------------------------------------------------------------------------
+15   Dell                           XPS 13                                                                                        
+Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics       
+                                                                                                                                  
+17   Apple                          MacBook Pro                                                                                   
+14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                    
+                                                                                                                                  
+19   HP                             Pavilion                                                                                      
+Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windo
+ws 11 Pro, Silver                                                                                                                 
+                                                                                                                                  
+21   HP                             Envy                                                                                          
+X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                  
+                                                                                                                                  
+23   Apple                          MacBook Air                                                                                   
+Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Work
+s with iPhone and iPad                                                                                                            
+                                                                                                                                  
+25   Dell                           Inspiron                                                                                      
+Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, W
+ebcam, SD Card Reader                                                                                                             
+                                                                                                                                  
+
+6 rows selected.
+
+SQL> set linesize 380
+SQL> select * from ITEM;
+
+ITEM MANUF                          MODEL                          COMMENTS                                                                                                                                                                                                                                                                                                                 
+---- ------------------------------ ------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------             
+15   Dell                           XPS 13                         Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                                                                              
+17   Apple                          MacBook Pro                    14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                                                                           
+19   HP                             Pavilion                       Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                                                                                      
+21   HP                             Envy                           X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                                                                                         
+23   Apple                          MacBook Air                    Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                                                                                 
+25   Dell                           Inspiron                       Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                                                                                  
+
+6 rows selected.
+
+SQL> COLUMN manuf FORMAT A15
+SQL> COLUMN model FORMAT A20
+SQL> select * from ITEM;
+
+ITEM MANUF           MODEL                COMMENTS                                                                                                                                                                                                                                                                                                                                          
+---- --------------- -------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                      
+15   Dell            XPS 13               Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                                                                                                       
+17   Apple           MacBook Pro          14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                                                                                                    
+19   HP              Pavilion             Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                                                                                                               
+21   HP              Envy                 X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                                                                                                                  
+23   Apple           MacBook Air          Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                                                                                                          
+25   Dell            Inspiron             Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                                                                                                           
+
+6 rows selected.
+
+SQL> set linesize 300
+SQL> select * from ITEM;
+
+ITEM MANUF           MODEL                                                                                                                                                                                                                                                                                  
+---- --------------- --------------------                                                                                                                                                                                                                                                                   
+COMMENTS                                                                                                                                                                                                                                                                                                    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15   Dell            XPS 13                                                                                                                                                                                                                                                                                 
+Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                            
+17   Apple           MacBook Pro                                                                                                                                                                                                                                                                            
+14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                            
+19   HP              Pavilion                                                                                                                                                                                                                                                                               
+Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                            
+21   HP              Envy                                                                                                                                                                                                                                                                                   
+X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                            
+23   Apple           MacBook Air                                                                                                                                                                                                                                                                            
+Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                            
+25   Dell            Inspiron                                                                                                                                                                                                                                                                               
+Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                            
+
+6 rows selected.
+
+SQL> COLUMN comments FORMAT A160
+SQL> select * from ITEM;
+
+ITEM MANUF           MODEL                COMMENTS                                                                                                                                                                                                                                                          
+---- --------------- -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                                  
+15   Dell            XPS 13               Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                       
+17   Apple           MacBook Pro          14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                    
+19   HP              Pavilion             Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                               
+21   HP              Envy                 X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                                  
+23   Apple           MacBook Air          Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                          
+25   Dell            Inspiron             Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                           
+
+6 rows selected.
+
+SQL> select * from computer
+  2  ;
+
+COMP NAME                 PURCHASE_      PRICE VENDOR               LO ITEM                                                                                                                                                                                                                                 
+---- -------------------- --------- ---------- -------------------- -- ----                                                                                                                                                                                                                                 
+C8   Newell               07-JUN-23       1700 Best Buy             3  15                                                                                                                                                                                                                                   
+C10  DataHub              22-JUN-23       1700 Dell                 2  15                                                                                                                                                                                                                                   
+C18  Wakanda              22-JUN-23       1209 HP                   2  19                                                                                                                                                                                                                                   
+C19  Simon                22-JUN-23       1209 HP                   1  19                                                                                                                                                                                                                                   
+C29  Goldeneye            22-JUN-23       2500 Apple Store          1  17                                                                                                                                                                                                                                   
+C30  Lakehouse            22-JUN-23       1700 Dell                 2  15                                                                                                                                                                                                                                   
+C21  Hobbit               05-APR-23       2199 Campus Store         1  17                                                                                                                                                                                                                                   
+C22  Azkaban              02-NOV-23       1209 HP                   3  19                                                                                                                                                                                                                                   
+C25  Avatar               02-NOV-23       2199 Campus Store         3  17                                                                                                                                                                                                                                   
+C28  Bard                 05-APR-23       1209 HP                   3  19                                                                                                                                                                                                                                   
+C31  Phoenix              16-AUG-24       1129 Amazon.com           4  21                                                                                                                                                                                                                                   
+C32  Stargate             16-AUG-24       1199 Apple Store          5  23                                                                                                                                                                                                                                   
+C33  Cloud                16-AUG-24       1129 Amazon.com           6  21                                                                                                                                                                                                                                   
+C34  Koala                16-AUG-24       1199 Apple Store          4  23                                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL> COLUMN comp_id FORMAT A7
+SQL> COLUMN purchase_date FORMAT A13
+SQL> select * from computer;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE VENDOR               LO ITEM                                                                                                                                                                                                                          
+------- -------------------- ------------- ---------- -------------------- -- ----                                                                                                                                                                                                                          
+C8      Newell               07-JUN-23           1700 Best Buy             3  15                                                                                                                                                                                                                            
+C10     DataHub              22-JUN-23           1700 Dell                 2  15                                                                                                                                                                                                                            
+C18     Wakanda              22-JUN-23           1209 HP                   2  19                                                                                                                                                                                                                            
+C19     Simon                22-JUN-23           1209 HP                   1  19                                                                                                                                                                                                                            
+C29     Goldeneye            22-JUN-23           2500 Apple Store          1  17                                                                                                                                                                                                                            
+C30     Lakehouse            22-JUN-23           1700 Dell                 2  15                                                                                                                                                                                                                            
+C21     Hobbit               05-APR-23           2199 Campus Store         1  17                                                                                                                                                                                                                            
+C22     Azkaban              02-NOV-23           1209 HP                   3  19                                                                                                                                                                                                                            
+C25     Avatar               02-NOV-23           2199 Campus Store         3  17                                                                                                                                                                                                                            
+C28     Bard                 05-APR-23           1209 HP                   3  19                                                                                                                                                                                                                            
+C31     Phoenix              16-AUG-24           1129 Amazon.com           4  21                                                                                                                                                                                                                            
+C32     Stargate             16-AUG-24           1199 Apple Store          5  23                                                                                                                                                                                                                            
+C33     Cloud                16-AUG-24           1129 Amazon.com           6  21                                                                                                                                                                                                                            
+C34     Koala                16-AUG-24           1199 Apple Store          4  23                                                                                                                                                                                                                            
+
+14 rows selected.
+
+SQL> COLUMN location_id FORMAT A11
+SQL> COLUMN item_id FORMAT A7
+SQL> select * from computer;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                                                                                                                                              
+------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                                                                                                                                              
+C8      Newell               07-JUN-23           1700 Best Buy             3           15                                                                                                                                                                                                                   
+C10     DataHub              22-JUN-23           1700 Dell                 2           15                                                                                                                                                                                                                   
+C18     Wakanda              22-JUN-23           1209 HP                   2           19                                                                                                                                                                                                                   
+C19     Simon                22-JUN-23           1209 HP                   1           19                                                                                                                                                                                                                   
+C29     Goldeneye            22-JUN-23           2500 Apple Store          1           17                                                                                                                                                                                                                   
+C30     Lakehouse            22-JUN-23           1700 Dell                 2           15                                                                                                                                                                                                                   
+C21     Hobbit               05-APR-23           2199 Campus Store         1           17                                                                                                                                                                                                                   
+C22     Azkaban              02-NOV-23           1209 HP                   3           19                                                                                                                                                                                                                   
+C25     Avatar               02-NOV-23           2199 Campus Store         3           17                                                                                                                                                                                                                   
+C28     Bard                 05-APR-23           1209 HP                   3           19                                                                                                                                                                                                                   
+C31     Phoenix              16-AUG-24           1129 Amazon.com           4           21                                                                                                                                                                                                                   
+C32     Stargate             16-AUG-24           1199 Apple Store          5           23                                                                                                                                                                                                                   
+C33     Cloud                16-AUG-24           1129 Amazon.com           6           21                                                                                                                                                                                                                   
+C34     Koala                16-AUG-24           1199 Apple Store          4           23                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL> select * from program;
+
+PROG_ID NAME                                                                                                                                                                                                                                                                                                
+------- -------------------------                                                                                                                                                                                                                                                                           
+COMPFIN Computational Finance                                                                                                                                                                                                                                                                               
+HNZIS   Information Systems                                                                                                                                                                                                                                                                                 
+DATAENG Data Engineering                                                                                                                                                                                                                                                                                    
+
+SQL> select * from loan;
+
+   LOAN_ID ST_I COMP_ID START_DAT END_DATE                                                                                                                                                                                                                                                                  
+---------- ---- ------- --------- ---------                                                                                                                                                                                                                                                                 
+         1 241  C8      15-JUN-23 03-SEP-23                                                                                                                                                                                                                                                                 
+         2 207  C30     18-AUG-23 23-JAN-24                                                                                                                                                                                                                                                                 
+         3 238  C10     22-AUG-23 22-MAY-24                                                                                                                                                                                                                                                                 
+         4 231  C18     22-AUG-23 22-AUG-23                                                                                                                                                                                                                                                                 
+         5 207  C18     22-AUG-23 12-APR-24                                                                                                                                                                                                                                                                 
+         6 213  C19     22-AUG-23 12-SEP-23                                                                                                                                                                                                                                                                 
+         7 231  C29     21-AUG-23 08-FEB-24                                                                                                                                                                                                                                                                 
+         8 213  C19     12-SEP-23 17-MAY-24                                                                                                                                                                                                                                                                 
+         9 323  C28     11-SEP-23 25-APR-24                                                                                                                                                                                                                                                                 
+        10 320  C8      28-SEP-23 09-OCT-23                                                                                                                                                                                                                                                                 
+        11 360  C8      09-OCT-23 25-APR-24                                                                                                                                                                                                                                                                 
+        12 362  C22     19-NOV-23 29-NOV-23                                                                                                                                                                                                                                                                 
+        13 241  C22     30-NOV-23                                                                                                                                                                                                                                                                           
+        14 238  C25     08-DEC-23 20-MAY-24                                                                                                                                                                                                                                                                 
+        15 320  C29     22-FEB-24 25-MAR-24                                                                                                                                                                                                                                                                 
+        16 323  C30     12-APR-24 27-AUG-24                                                                                                                                                                                                                                                                 
+        17 360  C21     22-APR-24 17-MAY-24                                                                                                                                                                                                                                                                 
+        18 207  C28     26-APR-24                                                                                                                                                                                                                                                                           
+        19 362  C8      02-MAY-24 13-MAY-24                                                                                                                                                                                                                                                                 
+        20 360  C29     06-MAY-24 16-SEP-24                                                                                                                                                                                                                                                                 
+        21 238  C10     24-MAY-24                                                                                                                                                                                                                                                                           
+        22 362  C21     14-JUN-24 16-SEP-24                                                                                                                                                                                                                                                                 
+        23 231  C25     23-AUG-24                                                                                                                                                                                                                                                                           
+        24 213  C19     26-AUG-24                                                                                                                                                                                                                                                                           
+        25 425  C30     30-AUG-24                                                                                                                                                                                                                                                                           
+        26 407  C31     30-AUG-24                                                                                                                                                                                                                                                                           
+        27 416  C32     30-AUG-24                                                                                                                                                                                                                                                                           
+        28 320  C8      30-AUG-24                                                                                                                                                                                                                                                                           
+        29 360  C21     16-SEP-24                                                                                                                                                                                                                                                                           
+        30 362  C18     18-SEP-24                                                                                                                                                                                                                                                                           
+
+30 rows selected.
+
+SQL> COLUMN st_id FORMAT A5
+SQL> select * from loan;
+
+   LOAN_ID ST_ID COMP_ID START_DAT END_DATE                                                                                                                                                                                                                                                                 
+---------- ----- ------- --------- ---------                                                                                                                                                                                                                                                                
+         1 241   C8      15-JUN-23 03-SEP-23                                                                                                                                                                                                                                                                
+         2 207   C30     18-AUG-23 23-JAN-24                                                                                                                                                                                                                                                                
+         3 238   C10     22-AUG-23 22-MAY-24                                                                                                                                                                                                                                                                
+         4 231   C18     22-AUG-23 22-AUG-23                                                                                                                                                                                                                                                                
+         5 207   C18     22-AUG-23 12-APR-24                                                                                                                                                                                                                                                                
+         6 213   C19     22-AUG-23 12-SEP-23                                                                                                                                                                                                                                                                
+         7 231   C29     21-AUG-23 08-FEB-24                                                                                                                                                                                                                                                                
+         8 213   C19     12-SEP-23 17-MAY-24                                                                                                                                                                                                                                                                
+         9 323   C28     11-SEP-23 25-APR-24                                                                                                                                                                                                                                                                
+        10 320   C8      28-SEP-23 09-OCT-23                                                                                                                                                                                                                                                                
+        11 360   C8      09-OCT-23 25-APR-24                                                                                                                                                                                                                                                                
+        12 362   C22     19-NOV-23 29-NOV-23                                                                                                                                                                                                                                                                
+        13 241   C22     30-NOV-23                                                                                                                                                                                                                                                                          
+        14 238   C25     08-DEC-23 20-MAY-24                                                                                                                                                                                                                                                                
+        15 320   C29     22-FEB-24 25-MAR-24                                                                                                                                                                                                                                                                
+        16 323   C30     12-APR-24 27-AUG-24                                                                                                                                                                                                                                                                
+        17 360   C21     22-APR-24 17-MAY-24                                                                                                                                                                                                                                                                
+        18 207   C28     26-APR-24                                                                                                                                                                                                                                                                          
+        19 362   C8      02-MAY-24 13-MAY-24                                                                                                                                                                                                                                                                
+        20 360   C29     06-MAY-24 16-SEP-24                                                                                                                                                                                                                                                                
+        21 238   C10     24-MAY-24                                                                                                                                                                                                                                                                          
+        22 362   C21     14-JUN-24 16-SEP-24                                                                                                                                                                                                                                                                
+        23 231   C25     23-AUG-24                                                                                                                                                                                                                                                                          
+        24 213   C19     26-AUG-24                                                                                                                                                                                                                                                                          
+        25 425   C30     30-AUG-24                                                                                                                                                                                                                                                                          
+        26 407   C31     30-AUG-24                                                                                                                                                                                                                                                                          
+        27 416   C32     30-AUG-24                                                                                                                                                                                                                                                                          
+        28 320   C8      30-AUG-24                                                                                                                                                                                                                                                                          
+        29 360   C21     16-SEP-24                                                                                                                                                                                                                                                                          
+        30 362   C18     18-SEP-24                                                                                                                                                                                                                                                                          
+
+30 rows selected.
+
+SQL> COLUMN price FORMAT $99999.99
+SQL> select * from loan;
+
+   LOAN_ID ST_ID COMP_ID START_DAT END_DATE                                                                                                                                                                                                                                                                 
+---------- ----- ------- --------- ---------                                                                                                                                                                                                                                                                
+         1 241   C8      15-JUN-23 03-SEP-23                                                                                                                                                                                                                                                                
+         2 207   C30     18-AUG-23 23-JAN-24                                                                                                                                                                                                                                                                
+         3 238   C10     22-AUG-23 22-MAY-24                                                                                                                                                                                                                                                                
+         4 231   C18     22-AUG-23 22-AUG-23                                                                                                                                                                                                                                                                
+         5 207   C18     22-AUG-23 12-APR-24                                                                                                                                                                                                                                                                
+         6 213   C19     22-AUG-23 12-SEP-23                                                                                                                                                                                                                                                                
+         7 231   C29     21-AUG-23 08-FEB-24                                                                                                                                                                                                                                                                
+         8 213   C19     12-SEP-23 17-MAY-24                                                                                                                                                                                                                                                                
+         9 323   C28     11-SEP-23 25-APR-24                                                                                                                                                                                                                                                                
+        10 320   C8      28-SEP-23 09-OCT-23                                                                                                                                                                                                                                                                
+        11 360   C8      09-OCT-23 25-APR-24                                                                                                                                                                                                                                                                
+        12 362   C22     19-NOV-23 29-NOV-23                                                                                                                                                                                                                                                                
+        13 241   C22     30-NOV-23                                                                                                                                                                                                                                                                          
+        14 238   C25     08-DEC-23 20-MAY-24                                                                                                                                                                                                                                                                
+        15 320   C29     22-FEB-24 25-MAR-24                                                                                                                                                                                                                                                                
+        16 323   C30     12-APR-24 27-AUG-24                                                                                                                                                                                                                                                                
+        17 360   C21     22-APR-24 17-MAY-24                                                                                                                                                                                                                                                                
+        18 207   C28     26-APR-24                                                                                                                                                                                                                                                                          
+        19 362   C8      02-MAY-24 13-MAY-24                                                                                                                                                                                                                                                                
+        20 360   C29     06-MAY-24 16-SEP-24                                                                                                                                                                                                                                                                
+        21 238   C10     24-MAY-24                                                                                                                                                                                                                                                                          
+        22 362   C21     14-JUN-24 16-SEP-24                                                                                                                                                                                                                                                                
+        23 231   C25     23-AUG-24                                                                                                                                                                                                                                                                          
+        24 213   C19     26-AUG-24                                                                                                                                                                                                                                                                          
+        25 425   C30     30-AUG-24                                                                                                                                                                                                                                                                          
+        26 407   C31     30-AUG-24                                                                                                                                                                                                                                                                          
+        27 416   C32     30-AUG-24                                                                                                                                                                                                                                                                          
+        28 320   C8      30-AUG-24                                                                                                                                                                                                                                                                          
+        29 360   C21     16-SEP-24                                                                                                                                                                                                                                                                          
+        30 362   C18     18-SEP-24                                                                                                                                                                                                                                                                          
+
+30 rows selected.
+
+SQL> select * from computer;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                                                                                                                                              
+------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                                                                                                                                              
+C8      Newell               07-JUN-23       $1700.00 Best Buy             3           15                                                                                                                                                                                                                   
+C10     DataHub              22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C18     Wakanda              22-JUN-23       $1209.00 HP                   2           19                                                                                                                                                                                                                   
+C19     Simon                22-JUN-23       $1209.00 HP                   1           19                                                                                                                                                                                                                   
+C29     Goldeneye            22-JUN-23       $2500.00 Apple Store          1           17                                                                                                                                                                                                                   
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C21     Hobbit               05-APR-23       $2199.00 Campus Store         1           17                                                                                                                                                                                                                   
+C22     Azkaban              02-NOV-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C25     Avatar               02-NOV-23       $2199.00 Campus Store         3           17                                                                                                                                                                                                                   
+C28     Bard                 05-APR-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C31     Phoenix              16-AUG-24       $1129.00 Amazon.com           4           21                                                                                                                                                                                                                   
+C32     Stargate             16-AUG-24       $1199.00 Apple Store          5           23                                                                                                                                                                                                                   
+C33     Cloud                16-AUG-24       $1129.00 Amazon.com           6           21                                                                                                                                                                                                                   
+C34     Koala                16-AUG-24       $1199.00 Apple Store          4           23                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL> select * from item;
+
+ITEM_ID MANUF           MODEL                COMMENTS                                                                                                                                                                                                                                                       
+------- --------------- -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                               
+15      Dell            XPS 13               Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                    
+17      Apple           MacBook Pro          14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                 
+19      HP              Pavilion             Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                            
+21      HP              Envy                 X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                               
+23      Apple           MacBook Air          Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                       
+25      Dell            Inspiron             Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                        
+
+6 rows selected.
+
+SQL> select * from computer;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                                                                                                                                              
+------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                                                                                                                                              
+C8      Newell               07-JUN-23       $1700.00 Best Buy             3           15                                                                                                                                                                                                                   
+C10     DataHub              22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C18     Wakanda              22-JUN-23       $1209.00 HP                   2           19                                                                                                                                                                                                                   
+C19     Simon                22-JUN-23       $1209.00 HP                   1           19                                                                                                                                                                                                                   
+C29     Goldeneye            22-JUN-23       $2500.00 Apple Store          1           17                                                                                                                                                                                                                   
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C21     Hobbit               05-APR-23       $2199.00 Campus Store         1           17                                                                                                                                                                                                                   
+C22     Azkaban              02-NOV-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C25     Avatar               02-NOV-23       $2199.00 Campus Store         3           17                                                                                                                                                                                                                   
+C28     Bard                 05-APR-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C31     Phoenix              16-AUG-24       $1129.00 Amazon.com           4           21                                                                                                                                                                                                                   
+C32     Stargate             16-AUG-24       $1199.00 Apple Store          5           23                                                                                                                                                                                                                   
+C33     Cloud                16-AUG-24       $1129.00 Amazon.com           6           21                                                                                                                                                                                                                   
+C34     Koala                16-AUG-24       $1199.00 Apple Store          4           23                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL> SELECT comp_id, name, purchase_date, price, manuf
+  2  FROM computer NATURAL JOIN item
+  3  where price > 1500;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE MANUF                                                                                                                                                                                                                                                 
+------- -------------------- ------------- ---------- ---------------                                                                                                                                                                                                                                       
+C8      Newell               07-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C10     DataHub              22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C29     Goldeneye            22-JUN-23       $2500.00 Apple                                                                                                                                                                                                                                                 
+C21     Hobbit               05-APR-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+C25     Avatar               02-NOV-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+
+6 rows selected.
+
+SQL> select * from computer;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                                                                                                                                              
+------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                                                                                                                                              
+C8      Newell               07-JUN-23       $1700.00 Best Buy             3           15                                                                                                                                                                                                                   
+C10     DataHub              22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C18     Wakanda              22-JUN-23       $1209.00 HP                   2           19                                                                                                                                                                                                                   
+C19     Simon                22-JUN-23       $1209.00 HP                   1           19                                                                                                                                                                                                                   
+C29     Goldeneye            22-JUN-23       $2500.00 Apple Store          1           17                                                                                                                                                                                                                   
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                 2           15                                                                                                                                                                                                                   
+C21     Hobbit               05-APR-23       $2199.00 Campus Store         1           17                                                                                                                                                                                                                   
+C22     Azkaban              02-NOV-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C25     Avatar               02-NOV-23       $2199.00 Campus Store         3           17                                                                                                                                                                                                                   
+C28     Bard                 05-APR-23       $1209.00 HP                   3           19                                                                                                                                                                                                                   
+C31     Phoenix              16-AUG-24       $1129.00 Amazon.com           4           21                                                                                                                                                                                                                   
+C32     Stargate             16-AUG-24       $1199.00 Apple Store          5           23                                                                                                                                                                                                                   
+C33     Cloud                16-AUG-24       $1129.00 Amazon.com           6           21                                                                                                                                                                                                                   
+C34     Koala                16-AUG-24       $1199.00 Apple Store          4           23                                                                                                                                                                                                                   
+
+14 rows selected.
+
+SQL> select * from item;
+
+ITEM_ID MANUF           MODEL                COMMENTS                                                                                                                                                                                                                                                       
+------- --------------- -------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                                               
+15      Dell            XPS 13               Touchscreen Laptop 13.4 inch FHD+ Thin and Light. Intel Core i7-1195G7, 16GB LPDDR4x RAM, 512GB SSD, Intel Iris Xe Graphics                                                                                                                                    
+17      Apple           MacBook Pro          14-inch, Apple M1 Pro chip with 10 core CPU and 16 core GPU, 16GB RAM, 1TB SSD                                                                                                                                                                                 
+19      HP              Pavilion             Business Laptop, 15.6" Full HD Display, Intel Core i7-1195G7 Processor, 32GB RAM, 1TB SSD, Fingerprint Reader, HDMI, Webcam, Windows 11 Pro, Silver                                                                                                            
+21      HP              Envy                 X360 2-in-1 15.6" FHD IPS Touch-Screen Laptop, Intel Quad Core i7-1165G7, 16GB DDR4 RAM, 1TB SSD                                                                                                                                                               
+23      Apple           MacBook Air          Laptop with M2 chip: 13.6-inch Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad                                                                                                       
+25      Dell            Inspiron             Inspiron 3000 Touchscreen Laptop, 15.6" FHD (1920 x1080) Display, Intel Core i7 (Quad-Core), 32GB RAM, 1TB PCIe SSD, HDMI, WiFi, Webcam, SD Card Reader                                                                                                        
+
+6 rows selected.
+
+SQL> INSERT INTO item values ('26', 'Asus', 'ROG', 'Gaming Laptop: Intel i9, nvidia gtx 1080, 16 GB RAM');
+
+1 row created.
+
+SQL> INSERT INTO item values ('27', 'HP', 'OMEN', 'Gaming Laptop: Intel i7, nvidia rtx 4090, 16 GB RAM');
+
+1 row created.
+
+SQL> set echo on
+SQL> SELECT comp_id, name, purchase_date, price, manuf
+  2  FROM computer NATURAL JOIN item
+  3  WHERE price > 1500;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE MANUF                                                                                                                                                                                                                                                 
+------- -------------------- ------------- ---------- ---------------                                                                                                                                                                                                                                       
+C8      Newell               07-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C10     DataHub              22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C29     Goldeneye            22-JUN-23       $2500.00 Apple                                                                                                                                                                                                                                                 
+C21     Hobbit               05-APR-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+C25     Avatar               02-NOV-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+
+6 rows selected.
+
+SQL> select * from student;
+
+ST_ID FNAME                LNAME                EMAIL                     PROGRAM                                                                                                                                                                                                                           
+----- -------------------- -------------------- ------------------------- -------                                                                                                                                                                                                                           
+207   Richard              Guerra               rg11@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+213   Sandra               Miller               sm5o@ab.uni.edu           HNZIS                                                                                                                                                                                                                             
+231   John                 Holin                john3@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+238   Richard              Johnson              rj9f@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+241   Vijay                Singh                vijays@ab.uni.edu         COMPFIN                                                                                                                                                                                                                           
+320   Anna                 Wang                 annaw@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+323   Joan                 Nimoy                joann@ab.uni.edu          COMPFIN                                                                                                                                                                                                                           
+360   John                 Bevens               jb23@ab.uni.edu           HNZIS                                                                                                                                                                                                                             
+362   Mark                 Couples              mc21@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+407   Bing                 Lee                  bingl@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+416   Michael              Price                mprice@ab.uni.edu         COMPFIN                                                                                                                                                                                                                           
+425   Angela               Pepper               angiep@ab.uni.edu         HNZIS                                                                                                                                                                                                                             
+437   James                Young                jy22@ab.uni.edu           DATAENG                                                                                                                                                                                                                           
+450   Ruben                Sanchez              rubens@ab.uni.edu         DATAENG                                                                                                                                                                                                                           
+
+14 rows selected.
+
+SQL> COLUMN program_code FORMAT A20
+SQL> select * from student;
+
+ST_ID FNAME                LNAME                EMAIL                     PROGRAM_CODE                                                                                                                                                                                                                      
+----- -------------------- -------------------- ------------------------- --------------------                                                                                                                                                                                                              
+207   Richard              Guerra               rg11@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+213   Sandra               Miller               sm5o@ab.uni.edu           HNZIS                                                                                                                                                                                                                             
+231   John                 Holin                john3@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+238   Richard              Johnson              rj9f@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+241   Vijay                Singh                vijays@ab.uni.edu         COMPFIN                                                                                                                                                                                                                           
+320   Anna                 Wang                 annaw@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+323   Joan                 Nimoy                joann@ab.uni.edu          COMPFIN                                                                                                                                                                                                                           
+360   John                 Bevens               jb23@ab.uni.edu           HNZIS                                                                                                                                                                                                                             
+362   Mark                 Couples              mc21@ab.uni.edu           COMPFIN                                                                                                                                                                                                                           
+407   Bing                 Lee                  bingl@ab.uni.edu          HNZIS                                                                                                                                                                                                                             
+416   Michael              Price                mprice@ab.uni.edu         COMPFIN                                                                                                                                                                                                                           
+425   Angela               Pepper               angiep@ab.uni.edu         HNZIS                                                                                                                                                                                                                             
+437   James                Young                jy22@ab.uni.edu           DATAENG                                                                                                                                                                                                                           
+450   Ruben                Sanchez              rubens@ab.uni.edu         DATAENG                                                                                                                                                                                                                           
+
+14 rows selected.
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN ('01-JUN-24', '31-DEC-24') and purchase_date like '%-%-24';
+WHERE start_date BETWEEN ('01-JUN-24', '31-DEC-24') and purchase_date like '%-%-24'
+                                     *
+ERROR at line 3:
+ORA-00907: missing right parenthesis 
+
+
+SQL> select * from program;
+
+PROG_ID NAME                                                                                                                                                                                                                                                                                                
+------- -------------------------                                                                                                                                                                                                                                                                           
+COMPFIN Computational Finance                                                                                                                                                                                                                                                                               
+HNZIS   Information Systems                                                                                                                                                                                                                                                                                 
+DATAENG Data Engineering                                                                                                                                                                                                                                                                                    
+
+SQL> select * from loan;
+
+   LOAN_ID ST_ID COMP_ID START_DAT END_DATE                                                                                                                                                                                                                                                                 
+---------- ----- ------- --------- ---------                                                                                                                                                                                                                                                                
+         1 241   C8      15-JUN-23 03-SEP-23                                                                                                                                                                                                                                                                
+         2 207   C30     18-AUG-23 23-JAN-24                                                                                                                                                                                                                                                                
+         3 238   C10     22-AUG-23 22-MAY-24                                                                                                                                                                                                                                                                
+         4 231   C18     22-AUG-23 22-AUG-23                                                                                                                                                                                                                                                                
+         5 207   C18     22-AUG-23 12-APR-24                                                                                                                                                                                                                                                                
+         6 213   C19     22-AUG-23 12-SEP-23                                                                                                                                                                                                                                                                
+         7 231   C29     21-AUG-23 08-FEB-24                                                                                                                                                                                                                                                                
+         8 213   C19     12-SEP-23 17-MAY-24                                                                                                                                                                                                                                                                
+         9 323   C28     11-SEP-23 25-APR-24                                                                                                                                                                                                                                                                
+        10 320   C8      28-SEP-23 09-OCT-23                                                                                                                                                                                                                                                                
+        11 360   C8      09-OCT-23 25-APR-24                                                                                                                                                                                                                                                                
+        12 362   C22     19-NOV-23 29-NOV-23                                                                                                                                                                                                                                                                
+        13 241   C22     30-NOV-23                                                                                                                                                                                                                                                                          
+        14 238   C25     08-DEC-23 20-MAY-24                                                                                                                                                                                                                                                                
+        15 320   C29     22-FEB-24 25-MAR-24                                                                                                                                                                                                                                                                
+        16 323   C30     12-APR-24 27-AUG-24                                                                                                                                                                                                                                                                
+        17 360   C21     22-APR-24 17-MAY-24                                                                                                                                                                                                                                                                
+        18 207   C28     26-APR-24                                                                                                                                                                                                                                                                          
+        19 362   C8      02-MAY-24 13-MAY-24                                                                                                                                                                                                                                                                
+        20 360   C29     06-MAY-24 16-SEP-24                                                                                                                                                                                                                                                                
+        21 238   C10     24-MAY-24                                                                                                                                                                                                                                                                          
+        22 362   C21     14-JUN-24 16-SEP-24                                                                                                                                                                                                                                                                
+        23 231   C25     23-AUG-24                                                                                                                                                                                                                                                                          
+        24 213   C19     26-AUG-24                                                                                                                                                                                                                                                                          
+        25 425   C30     30-AUG-24                                                                                                                                                                                                                                                                          
+        26 407   C31     30-AUG-24                                                                                                                                                                                                                                                                          
+        27 416   C32     30-AUG-24                                                                                                                                                                                                                                                                          
+        28 320   C8      30-AUG-24                                                                                                                                                                                                                                                                          
+        29 360   C21     16-SEP-24                                                                                                                                                                                                                                                                          
+        30 362   C18     18-SEP-24                                                                                                                                                                                                                                                                          
+
+30 rows selected.
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUN-24' and '31-DEC-24' and purchase_date like '%-%-24';
+
+ST_ID||''||FNAME||''||LNAME                                                                                                                                                                                                                                                                                 
+----------------------------------------------                                                                                                                                                                                                                                                              
+407 Bing Lee                                                                                                                                                                                                                                                                                                
+416 Michael Price                                                                                                                                                                                                                                                                                           
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUN-24' and '31-DEC-24' and purchase_date like '%-%-24';
+
+STUDENT INFO                                                                                                                                                                                                                                                                                                
+----------------------------------------------                                                                                                                                                                                                                                                              
+407 Bing Lee                                                                                                                                                                                                                                                                                                
+416 Michael Price                                                                                                                                                                                                                                                                                           
+
+SQL> SELECT *
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUN-24' and '31-DEC-24' and purchase_date like '%-%-24';
+
+COMP_ID ST_ID FNAME                LNAME                EMAIL                     PROGRAM_CODE            LOAN_ID START_DAT END_DATE  NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                
+------- ----- -------------------- -------------------- ------------------------- -------------------- ---------- --------- --------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                
+C31     407   Bing                 Lee                  bingl@ab.uni.edu          HNZIS                        26 30-AUG-24           Phoenix              16-AUG-24       $1129.00 Amazon.com           4           21                                                                                     
+C32     416   Michael              Price                mprice@ab.uni.edu         COMPFIN                      27 30-AUG-24           Stargate             16-AUG-24       $1199.00 Apple Store          5           23                                                                                     
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '%-%-23';
+
+STUDENT INFO                                                                                                                                                                                                                                                                                                
+----------------------------------------------                                                                                                                                                                                                                                                              
+213 Sandra Miller                                                                                                                                                                                                                                                                                           
+231 John Holin                                                                                                                                                                                                                                                                                              
+320 Anna Wang                                                                                                                                                                                                                                                                                               
+360 John Bevens                                                                                                                                                                                                                                                                                             
+362 Mark Couples                                                                                                                                                                                                                                                                                            
+425 Angela Pepper                                                                                                                                                                                                                                                                                           
+
+6 rows selected.
+
+SQL> SELECT comp_id, name, purchase_date, price, manuf
+  2  FROM computer NATURAL JOIN item
+  3  WHERE price > 1500;
+
+COMP_ID NAME                 PURCHASE_DATE      PRICE MANUF                                                                                                                                                                                                                                                 
+------- -------------------- ------------- ---------- ---------------                                                                                                                                                                                                                                       
+C8      Newell               07-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C10     DataHub              22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C30     Lakehouse            22-JUN-23       $1700.00 Dell                                                                                                                                                                                                                                                  
+C29     Goldeneye            22-JUN-23       $2500.00 Apple                                                                                                                                                                                                                                                 
+C21     Hobbit               05-APR-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+C25     Avatar               02-NOV-23       $2199.00 Apple                                                                                                                                                                                                                                                 
+
+6 rows selected.
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '__-__-23';
+
+no rows selected
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '%-%-23';
+
+STUDENT INFO                                                                                                                                                                                                                                                                                                
+----------------------------------------------                                                                                                                                                                                                                                                              
+213 Sandra Miller                                                                                                                                                                                                                                                                                           
+231 John Holin                                                                                                                                                                                                                                                                                              
+320 Anna Wang                                                                                                                                                                                                                                                                                               
+360 John Bevens                                                                                                                                                                                                                                                                                             
+362 Mark Couples                                                                                                                                                                                                                                                                                            
+425 Angela Pepper                                                                                                                                                                                                                                                                                           
+
+6 rows selected.
+
+SQL> 
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '%-%-23'
+  4  ORDER BY lname;
+
+STUDENT INFO                                                                                                                                                                                                                                                                                                
+----------------------------------------------                                                                                                                                                                                                                                                              
+360 John Bevens                                                                                                                                                                                                                                                                                             
+362 Mark Couples                                                                                                                                                                                                                                                                                            
+231 John Holin                                                                                                                                                                                                                                                                                              
+213 Sandra Miller                                                                                                                                                                                                                                                                                           
+425 Angela Pepper                                                                                                                                                                                                                                                                                           
+320 Anna Wang                                                                                                                                                                                                                                                                                               
+
+6 rows selected.
+
+SQL> SELECT comp_id, name, manuf, model, purchase_date
+  2  FROM computer NATURAL JOIN item
+  3  EXCEPT
+  4  SELECT DISTINCT comp_id, name, manuf, model, purchase_date
+  5  FROM computer NATURAL JOIN item NATURAL JOIN loan;
+SELECT DISTINCT comp_id, name, manuf, model, purchase_date
+*
+ERROR at line 4:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SELECT comp_id, name, manuf, model, purchase_date
+  2  FROM computer NATURAL JOIN item
+  3  MINUS
+  4  SELECT DISTINCT comp_id, name, manuf, model, purchase_date
+  5  FROM computer NATURAL JOIN item NATURAL JOIN loan;
+
+COMP_ID NAME                 MANUF           MODEL                PURCHASE_DATE                                                                                                                                                                                                                             
+------- -------------------- --------------- -------------------- -------------                                                                                                                                                                                                                             
+C33     Cloud                HP              Envy                 16-AUG-24                                                                                                                                                                                                                                 
+C34     Koala                Apple           MacBook Air          16-AUG-24                                                                                                                                                                                                                                 
+
+SQL> SELECT *
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '%-%-23'
+  4  ORDER BY lname;
+
+COMP_ID ST_ID FNAME                LNAME                EMAIL                     PROGRAM_CODE            LOAN_ID START_DAT END_DATE  NAME                 PURCHASE_DATE      PRICE VENDOR               LOCATION_ID ITEM_ID                                                                                
+------- ----- -------------------- -------------------- ------------------------- -------------------- ---------- --------- --------- -------------------- ------------- ---------- -------------------- ----------- -------                                                                                
+C21     360   John                 Bevens               jb23@ab.uni.edu           HNZIS                        29 16-SEP-24           Hobbit               05-APR-23       $2199.00 Campus Store         1           17                                                                                     
+C18     362   Mark                 Couples              mc21@ab.uni.edu           COMPFIN                      30 18-SEP-24           Wakanda              22-JUN-23       $1209.00 HP                   2           19                                                                                     
+C25     231   John                 Holin                john3@ab.uni.edu          HNZIS                        23 23-AUG-24           Avatar               02-NOV-23       $2199.00 Campus Store         3           17                                                                                     
+C19     213   Sandra               Miller               sm5o@ab.uni.edu           HNZIS                        24 26-AUG-24           Simon                22-JUN-23       $1209.00 HP                   1           19                                                                                     
+C30     425   Angela               Pepper               angiep@ab.uni.edu         HNZIS                        25 30-AUG-24           Lakehouse            22-JUN-23       $1700.00 Dell                 2           15                                                                                     
+C8      320   Anna                 Wang                 annaw@ab.uni.edu          HNZIS                        28 30-AUG-24           Newell               07-JUN-23       $1700.00 Best Buy             3           15                                                                                     
+
+6 rows selected.
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '__-__-23'
+  4  ORDER BY lname;
+
+no rows selected
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname as "STUDENT INFO"
+  2  FROM student NATURAL JOIN loan NATURAL JOIN computer
+  3  WHERE start_date BETWEEN '01-JUL-24' and '31-DEC-24' and purchase_date like '__-___-23'
+  4  ORDER BY lname;
+
+STUDENT INFO                                                                                                                                                                                                                                                                                                
+----------------------------------------------                                                                                                                                                                                                                                                              
+360 John Bevens                                                                                                                                                                                                                                                                                             
+362 Mark Couples                                                                                                                                                                                                                                                                                            
+231 John Holin                                                                                                                                                                                                                                                                                              
+213 Sandra Miller                                                                                                                                                                                                                                                                                           
+425 Angela Pepper                                                                                                                                                                                                                                                                                           
+320 Anna Wang                                                                                                                                                                                                                                                                                               
+
+6 rows selected.
+
+SQL> SELECT name, model, building || ' ' || room as "LOCATION"
+  2  FROM computer NATURAL JOIN location NATURAL JOIN loan
+  3  WHERE start_date like '%-%-23' AND end_date LIKE '%-%-23';
+SELECT name, model, building || ' ' || room as "LOCATION"
+             *
+ERROR at line 1:
+ORA-00904: "MODEL": invalid identifier 
+
+
+SQL> SELECT name, model, building || ' ' || room as "LOCATION"
+  2  FROM computer NATURAL JOIN location NATURAL JOIN item
+  3  WHERE start_date like '__-___-23' AND end_date LIKE '__-___-23';
+WHERE start_date like '__-___-23' AND end_date LIKE '__-___-23'
+                                      *
+ERROR at line 3:
+ORA-00904: "END_DATE": invalid identifier 
+
+
+SQL> select * from loan;
+
+   LOAN_ID ST_ID COMP_ID START_DAT END_DATE                                                                                                                                                                                                                                                                 
+---------- ----- ------- --------- ---------                                                                                                                                                                                                                                                                
+         1 241   C8      15-JUN-23 03-SEP-23                                                                                                                                                                                                                                                                
+         2 207   C30     18-AUG-23 23-JAN-24                                                                                                                                                                                                                                                                
+         3 238   C10     22-AUG-23 22-MAY-24                                                                                                                                                                                                                                                                
+         4 231   C18     22-AUG-23 22-AUG-23                                                                                                                                                                                                                                                                
+         5 207   C18     22-AUG-23 12-APR-24                                                                                                                                                                                                                                                                
+         6 213   C19     22-AUG-23 12-SEP-23                                                                                                                                                                                                                                                                
+         7 231   C29     21-AUG-23 08-FEB-24                                                                                                                                                                                                                                                                
+         8 213   C19     12-SEP-23 17-MAY-24                                                                                                                                                                                                                                                                
+         9 323   C28     11-SEP-23 25-APR-24                                                                                                                                                                                                                                                                
+        10 320   C8      28-SEP-23 09-OCT-23                                                                                                                                                                                                                                                                
+        11 360   C8      09-OCT-23 25-APR-24                                                                                                                                                                                                                                                                
+        12 362   C22     19-NOV-23 29-NOV-23                                                                                                                                                                                                                                                                
+        13 241   C22     30-NOV-23                                                                                                                                                                                                                                                                          
+        14 238   C25     08-DEC-23 20-MAY-24                                                                                                                                                                                                                                                                
+        15 320   C29     22-FEB-24 25-MAR-24                                                                                                                                                                                                                                                                
+        16 323   C30     12-APR-24 27-AUG-24                                                                                                                                                                                                                                                                
+        17 360   C21     22-APR-24 17-MAY-24                                                                                                                                                                                                                                                                
+        18 207   C28     26-APR-24                                                                                                                                                                                                                                                                          
+        19 362   C8      02-MAY-24 13-MAY-24                                                                                                                                                                                                                                                                
+        20 360   C29     06-MAY-24 16-SEP-24                                                                                                                                                                                                                                                                
+        21 238   C10     24-MAY-24                                                                                                                                                                                                                                                                          
+        22 362   C21     14-JUN-24 16-SEP-24                                                                                                                                                                                                                                                                
+        23 231   C25     23-AUG-24                                                                                                                                                                                                                                                                          
+        24 213   C19     26-AUG-24                                                                                                                                                                                                                                                                          
+        25 425   C30     30-AUG-24                                                                                                                                                                                                                                                                          
+        26 407   C31     30-AUG-24                                                                                                                                                                                                                                                                          
+        27 416   C32     30-AUG-24                                                                                                                                                                                                                                                                          
+        28 320   C8      30-AUG-24                                                                                                                                                                                                                                                                          
+        29 360   C21     16-SEP-24                                                                                                                                                                                                                                                                          
+        30 362   C18     18-SEP-24                                                                                                                                                                                                                                                                          
+
+30 rows selected.
+
+SQL> SELECT name, model, building || ' ' || room as "LOCATION"
+  2  FROM computer NATURAL JOIN location NATURAL JOIN item NATURAL JOIN loan
+  3  WHERE start_date LIKE '__-___-23' AND end_date LIKE '__-___-23';
+
+NAME                 MODEL                LOCATION                                                                                                                                                                                                                                                          
+-------------------- -------------------- ----------------------------                                                                                                                                                                                                                                      
+Newell               XPS 13               HBH 112                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 116                                                                                                                                                                                                                                                           
+Newell               XPS 13               NSH 116                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 253                                                                                                                                                                                                                                                           
+Newell               XPS 13               NSH 305                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 3024                                                                                                                                                                                                                                                          
+Newell               XPS 13               HBH 112                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 116                                                                                                                                                                                                                                                           
+Newell               XPS 13               NSH 116                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 253                                                                                                                                                                                                                                                           
+Newell               XPS 13               NSH 305                                                                                                                                                                                                                                                           
+Newell               XPS 13               HBH 3024                                                                                                                                                                                                                                                          
+Wakanda              Pavilion             HBH 112                                                                                                                                                                                                                                                           
+Wakanda              Pavilion             HBH 116                                                                                                                                                                                                                                                           
+Wakanda              Pavilion             NSH 116                                                                                                                                                                                                                                                           
+Wakanda              Pavilion             HBH 253                                                                                                                                                                                                                                                           
+Wakanda              Pavilion             NSH 305                                                                                                                                                                                                                                                           
+Wakanda              Pavilion             HBH 3024                                                                                                                                                                                                                                                          
+Simon                Pavilion             HBH 112                                                                                                                                                                                                                                                           
+Simon                Pavilion             HBH 116                                                                                                                                                                                                                                                           
+Simon                Pavilion             NSH 116                                                                                                                                                                                                                                                           
+Simon                Pavilion             HBH 253                                                                                                                                                                                                                                                           
+Simon                Pavilion             NSH 305                                                                                                                                                                                                                                                           
+Simon                Pavilion             HBH 3024                                                                                                                                                                                                                                                          
+Azkaban              Pavilion             HBH 112                                                                                                                                                                                                                                                           
+Azkaban              Pavilion             HBH 116                                                                                                                                                                                                                                                           
+Azkaban              Pavilion             NSH 116                                                                                                                                                                                                                                                           
+Azkaban              Pavilion             HBH 253                                                                                                                                                                                                                                                           
+Azkaban              Pavilion             NSH 305                                                                                                                                                                                                                                                           
+Azkaban              Pavilion             HBH 3024                                                                                                                                                                                                                                                          
+
+30 rows selected.
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  2  MINUS
+  3  SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  4  FROM student NATURAL JOIN loan
+  5  ORDER BY lname;
+MINUS
+*
+ERROR at line 2:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  2  FROM student NATURAL JOIN
+  3  MINUS
+  4  SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  5  FROM student NATURAL JOIN loan
+  6  ORDER BY lname;
+MINUS
+*
+ERROR at line 3:
+ORA-00903: invalid table name 
+
+
+SQL> SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  2  FROM student
+  3  MINUS
+  4  SELECT st_id || ' ' || fname || ' ' || lname || ' ' || email AS "STUDENT INFO"
+  5  FROM student NATURAL JOIN loan
+  6  ORDER BY lname;
+ORDER BY lname
+         *
+ERROR at line 6:
+ORA-00904: "LNAME": invalid identifier 
+
+
+SQL> commit
+  2  ;
+
+Commit complete.
+
+SQL> exit
